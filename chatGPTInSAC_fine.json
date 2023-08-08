@@ -1,0 +1,54 @@
+{
+  "eula": "",
+  "vendor": "soshi_kawata",
+  "license": "",
+  "id": "com.kawata.sap.sac.chatgpt2",
+  "version": "1.0.0",
+  "name": "chatGPT SAC_fine_tune_X",
+  "newInstancePrefix": "chatGPTInSAC_fine_X",
+  "description": "A custom widget to integrate chatGPT3 in SAC Analytic application for finetuning model",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "custom-widget",
+      "url": "https://jn4sju.github.io/chatgpt/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 1
+		},
+		"height": {
+			"type": "integer",
+			"default": 1
+		}
+  },
+  "methods": {
+		"post": {
+			"description": "Wrapper for jQuery post",
+			"parameters": [
+				{
+					"name": "APIKey",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "endPoint",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "prompt",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"returnType": "string"
+		}
+  },
+  "events": {
+  }
+}
